@@ -1,0 +1,21 @@
+PODS:
+  - MWFeedParser (1.0.1):
+    - MWFeedParser/FeedParser (= 1.0.1)
+    - MWFeedParser/NSDate+InternetDateTime (= 1.0.1)
+    - MWFeedParser/NSString+HTML (= 1.0.1)
+  - MWFeedParser/FeedParser (1.0.1):
+    - MWFeedParser/NSDate+InternetDateTime
+    - MWFeedParser/NSString+HTML
+  - MWFeedParser/NSDate+InternetDateTime (1.0.1)
+  - MWFeedParser/NSString+HTML (1.0.1)
+  - SVWebViewController (1.0)
+
+DEPENDENCIES:
+  - MWFeedParser
+  - SVWebViewController
+
+SPEC CHECKSUMS:
+  MWFeedParser: 003cbf5398e99a7f2057fbe9583054fd1b84be72
+  SVWebViewController: fbf917baa92744c54cfb89a52a4c056e409973a4
+
+COCOAPODS: 0.36.0

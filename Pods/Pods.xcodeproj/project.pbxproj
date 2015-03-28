@@ -1,0 +1,694 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		034F9FB3619DFEA408C21DF2 /* MWFeedParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C411284DA580EB57E5F8C7 /* MWFeedParser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		100F39660FDE06202181D206 /* Pods-PHNewsApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5A59BAE00BB4FB92B5BCD1 /* Pods-PHNewsApp-dummy.m */; };
+		14E35EE979C624659D9B32E5 /* SVModalWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B914CA9A8D3C593132E506 /* SVModalWebViewController.m */; };
+		1E851C23BE32BE208B3F26F5 /* SVWebViewControllerActivityChrome.h in Headers */ = {isa = PBXBuildFile; fileRef = 35F33447419EA30A50DA9469 /* SVWebViewControllerActivityChrome.h */; };
+		35F85EC4E67792EBBD78FF0C /* MWFeedInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C6782E8AADB6FF4DD44810A /* MWFeedInfo.h */; };
+		3955401ABB5E1BBD355B56C9 /* MWFeedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A30D0F6EA57B5D2079F03540 /* MWFeedItem.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		47C52567215B0BBCF6E440DC /* MWFeedParser.h in Headers */ = {isa = PBXBuildFile; fileRef = EAAA43E03724DB55E97CF13A /* MWFeedParser.h */; };
+		49676933940037CBEBBC7B14 /* NSDate+InternetDateTime.h in Headers */ = {isa = PBXBuildFile; fileRef = 561A0BE3375E51574DD48060 /* NSDate+InternetDateTime.h */; };
+		57CD7963F8D9E866C7DE15C2 /* SVWebViewControllerActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 73278BCD9518C50A5CFE47EF /* SVWebViewControllerActivity.m */; };
+		5F61BEE766AE1FC79A5890C2 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DA763173924DC7CCFDBD76D /* GTMNSString+HTML.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6A09984A8CEC2D569BF5190E /* SVWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F3080E60FD98230AD9BAA78D /* SVWebViewController.h */; };
+		6EE738F0776103D222EBF627 /* GTMNSString+HTML.h in Headers */ = {isa = PBXBuildFile; fileRef = 782F17AF4B769A7DBCAAA840 /* GTMNSString+HTML.h */; };
+		6FF22FC028B45990F807B5D0 /* NSString+HTML.h in Headers */ = {isa = PBXBuildFile; fileRef = BFFE8D38933E7F3EF92594A1 /* NSString+HTML.h */; };
+		90AB769C13F7E47D64FD73EB /* SVWebViewControllerActivitySafari.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEDDFB2A7058A4DE6984192 /* SVWebViewControllerActivitySafari.m */; };
+		93F56006C912EE31226CF2A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61909B40CF48F007E785840B /* Foundation.framework */; };
+		9D655E28C0DDD39E9D2B2410 /* SVModalWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 26CF4F11C206127795113B97 /* SVModalWebViewController.h */; };
+		9E751CEBABB6BD29C2FA17F2 /* Pods-PHNewsApp-MWFeedParser-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 62489C909A4514AD843A0E63 /* Pods-PHNewsApp-MWFeedParser-dummy.m */; };
+		A300115EBB265FB77ADB4C04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61909B40CF48F007E785840B /* Foundation.framework */; };
+		ACBC7126136E1D2697420527 /* SVWebViewControllerActivitySafari.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F91E2D4B3852844A115E8B2 /* SVWebViewControllerActivitySafari.h */; };
+		AE0C0822E2C9D18167EAE7B9 /* SVWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9AE59995786E6BEE09B054 /* SVWebViewController.m */; };
+		AF06B47C4E44682BE82F8FE0 /* MWFeedItem.h in Headers */ = {isa = PBXBuildFile; fileRef = DF1C2EC018464EC12E1DE18D /* MWFeedItem.h */; };
+		B1FA612078663073DA4BDEDA /* MWFeedInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B2CCD50B1B63E85C80A62E0 /* MWFeedInfo.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B4C21BFECA3F53852C9E0C18 /* SVWebViewControllerActivity.h in Headers */ = {isa = PBXBuildFile; fileRef = 84A4D613158A7A1DDC3CD878 /* SVWebViewControllerActivity.h */; };
+		D60E4FECDFEAD0EB8EEBFAB6 /* SVWebViewControllerActivityChrome.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C0055F3EDE5FD3489E1C2F /* SVWebViewControllerActivityChrome.m */; };
+		DF90B4CB9FBA04102321DACD /* Pods-PHNewsApp-SVWebViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FE874608C42F20012F2E15C0 /* Pods-PHNewsApp-SVWebViewController-dummy.m */; };
+		E5D1809548511253A1CE2A88 /* MWFeedParser_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = B326D65BB6A7D0E72A81B5BE /* MWFeedParser_Private.h */; };
+		F1DFBA8ABDE62486C64B6F30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61909B40CF48F007E785840B /* Foundation.framework */; };
+		F35821DE29451735521319E7 /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 73CA7E52F3FBF98B614C6C0B /* NSString+HTML.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FBB1823E8E657AB8D5072207 /* NSDate+InternetDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = D8501E6DC470514D21F8AF79 /* NSDate+InternetDateTime.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A9AB3ECE103197181124CFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20039FAA9BF5F36F7DCDEACC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 182D3DD077467DB8A0708111;
+			remoteInfo = "Pods-PHNewsApp-SVWebViewController";
+		};
+		D157C65D2634843E012D7D60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20039FAA9BF5F36F7DCDEACC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F526470127AAFF16E0CF0DAC;
+			remoteInfo = "Pods-PHNewsApp-MWFeedParser";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0512FCA2067F409896AC8124 /* SVWebViewControllerActivitySafari-iPad@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "SVWebViewControllerActivitySafari-iPad@2x.png"; path = "SVWebViewController/UIActivities/Safari/SVWebViewControllerActivitySafari-iPad@2x.png"; sourceTree = "<group>"; };
+		0BED7648680253BA65455DE3 /* SVWebViewControllerBack@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "SVWebViewControllerBack@2x.png"; path = "SVWebViewController/SVWebViewController.bundle/SVWebViewControllerBack@2x.png"; sourceTree = "<group>"; };
+		0CF1401CA851DED4938CE113 /* SVWebViewControllerNext@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "SVWebViewControllerNext@2x.png"; path = "SVWebViewController/SVWebViewController.bundle/SVWebViewControllerNext@2x.png"; sourceTree = "<group>"; };
+		0EEDDFB2A7058A4DE6984192 /* SVWebViewControllerActivitySafari.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVWebViewControllerActivitySafari.m; path = SVWebViewController/UIActivities/Safari/SVWebViewControllerActivitySafari.m; sourceTree = "<group>"; };
+		0F91E2D4B3852844A115E8B2 /* SVWebViewControllerActivitySafari.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVWebViewControllerActivitySafari.h; path = SVWebViewController/UIActivities/Safari/SVWebViewControllerActivitySafari.h; sourceTree = "<group>"; };
+		1276CE1491213652922559B3 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1B2CCD50B1B63E85C80A62E0 /* MWFeedInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MWFeedInfo.m; path = Classes/MWFeedInfo.m; sourceTree = "<group>"; };
+		23C0055F3EDE5FD3489E1C2F /* SVWebViewControllerActivityChrome.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVWebViewControllerActivityChrome.m; path = SVWebViewController/UIActivities/Chrome/SVWebViewControllerActivityChrome.m; sourceTree = "<group>"; };
+		249DECFFF322C7AC9F6F1436 /* libPods-PHNewsApp-MWFeedParser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PHNewsApp-MWFeedParser.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		26CF4F11C206127795113B97 /* SVModalWebViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVModalWebViewController.h; path = SVWebViewController/SVModalWebViewController.h; sourceTree = "<group>"; };
+		2B64F3C424AA2518A843CF79 /* Pods-PHNewsApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PHNewsApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		31E4FB30A922A7A2632EB3AB /* SVWebViewControllerActivityChrome-iPad@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "SVWebViewControllerActivityChrome-iPad@2x.png"; path = "SVWebViewController/UIActivities/Chrome/SVWebViewControllerActivityChrome-iPad@2x.png"; sourceTree = "<group>"; };
+		35F33447419EA30A50DA9469 /* SVWebViewControllerActivityChrome.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVWebViewControllerActivityChrome.h; path = SVWebViewController/UIActivities/Chrome/SVWebViewControllerActivityChrome.h; sourceTree = "<group>"; };
+		39B914CA9A8D3C593132E506 /* SVModalWebViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVModalWebViewController.m; path = SVWebViewController/SVModalWebViewController.m; sourceTree = "<group>"; };
+		48AA331BE9179797B0E9ADA0 /* SVWebViewController.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVWebViewController.bundle; path = SVWebViewController/SVWebViewController.bundle; sourceTree = "<group>"; };
+		4D9C69D6A8482DE84EB44EDD /* Pods-PHNewsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PHNewsApp.release.xcconfig"; sourceTree = "<group>"; };
+		561A0BE3375E51574DD48060 /* NSDate+InternetDateTime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+InternetDateTime.h"; path = "Classes/NSDate+InternetDateTime.h"; sourceTree = "<group>"; };
+		56AE80AC6CC9DED4D7E20FF8 /* Pods-PHNewsApp-MWFeedParser-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PHNewsApp-MWFeedParser-Private.xcconfig"; sourceTree = "<group>"; };
+		61909B40CF48F007E785840B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		62489C909A4514AD843A0E63 /* Pods-PHNewsApp-MWFeedParser-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PHNewsApp-MWFeedParser-dummy.m"; sourceTree = "<group>"; };
+		73278BCD9518C50A5CFE47EF /* SVWebViewControllerActivity.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVWebViewControllerActivity.m; path = SVWebViewController/UIActivities/SVWebViewControllerActivity.m; sourceTree = "<group>"; };
+		73CA7E52F3FBF98B614C6C0B /* NSString+HTML.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+HTML.m"; path = "Classes/NSString+HTML.m"; sourceTree = "<group>"; };
+		76274ED2E99C49A3C758DEBF /* SVWebViewControllerActivityChrome-iPad.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "SVWebViewControllerActivityChrome-iPad.png"; path = "SVWebViewController/UIActivities/Chrome/SVWebViewControllerActivityChrome-iPad.png"; sourceTree = "<group>"; };
+		782F17AF4B769A7DBCAAA840 /* GTMNSString+HTML.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSString+HTML.h"; path = "Classes/GTMNSString+HTML.h"; sourceTree = "<group>"; };
+		84A4D613158A7A1DDC3CD878 /* SVWebViewControllerActivity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVWebViewControllerActivity.h; path = SVWebViewController/UIActivities/SVWebViewControllerActivity.h; sourceTree = "<group>"; };
+		851D27CC3B14B7A40EDD4547 /* Pods-PHNewsApp-MWFeedParser.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PHNewsApp-MWFeedParser.xcconfig"; sourceTree = "<group>"; };
+		8D605A1DBCC7A6D283289F82 /* Pods-PHNewsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PHNewsApp.debug.xcconfig"; sourceTree = "<group>"; };
+		8DA763173924DC7CCFDBD76D /* GTMNSString+HTML.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSString+HTML.m"; path = "Classes/GTMNSString+HTML.m"; sourceTree = "<group>"; };
+		8FAEE60EE0FD1B0CBCB2273B /* SVWebViewControllerActivitySafari@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "SVWebViewControllerActivitySafari@2x.png"; path = "SVWebViewController/UIActivities/Safari/SVWebViewControllerActivitySafari@2x.png"; sourceTree = "<group>"; };
+		920B43F88CF53E93932A6C92 /* Pods-PHNewsApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PHNewsApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		982034B4A39A8E89ED9B045D /* SVWebViewControllerActivityChrome@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "SVWebViewControllerActivityChrome@2x.png"; path = "SVWebViewController/UIActivities/Chrome/SVWebViewControllerActivityChrome@2x.png"; sourceTree = "<group>"; };
+		98C174E6DEC3101EDF3E4210 /* Pods-PHNewsApp-MWFeedParser-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PHNewsApp-MWFeedParser-prefix.pch"; sourceTree = "<group>"; };
+		9AEF7002948C77E591E26A94 /* Pods-PHNewsApp-SVWebViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PHNewsApp-SVWebViewController-prefix.pch"; sourceTree = "<group>"; };
+		9C6782E8AADB6FF4DD44810A /* MWFeedInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWFeedInfo.h; path = Classes/MWFeedInfo.h; sourceTree = "<group>"; };
+		A30D0F6EA57B5D2079F03540 /* MWFeedItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MWFeedItem.m; path = Classes/MWFeedItem.m; sourceTree = "<group>"; };
+		A8EF4D9152B884024BE04478 /* Pods-PHNewsApp-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PHNewsApp-environment.h"; sourceTree = "<group>"; };
+		AD0C75F75EC5A5027BE1A03B /* libPods-PHNewsApp-SVWebViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PHNewsApp-SVWebViewController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B272757C2C2968659CAFE1C4 /* Pods-PHNewsApp-SVWebViewController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PHNewsApp-SVWebViewController-Private.xcconfig"; sourceTree = "<group>"; };
+		B326D65BB6A7D0E72A81B5BE /* MWFeedParser_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWFeedParser_Private.h; path = Classes/MWFeedParser_Private.h; sourceTree = "<group>"; };
+		BFFE8D38933E7F3EF92594A1 /* NSString+HTML.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+HTML.h"; path = "Classes/NSString+HTML.h"; sourceTree = "<group>"; };
+		D1CB0892008E0AB4EA6BBAA7 /* Pods-PHNewsApp-SVWebViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PHNewsApp-SVWebViewController.xcconfig"; sourceTree = "<group>"; };
+		D24391A89D6855181EC3DC67 /* SVWebViewControllerActivitySafari-iPad.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "SVWebViewControllerActivitySafari-iPad.png"; path = "SVWebViewController/UIActivities/Safari/SVWebViewControllerActivitySafari-iPad.png"; sourceTree = "<group>"; };
+		D8501E6DC470514D21F8AF79 /* NSDate+InternetDateTime.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+InternetDateTime.m"; path = "Classes/NSDate+InternetDateTime.m"; sourceTree = "<group>"; };
+		DC9AE59995786E6BEE09B054 /* SVWebViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVWebViewController.m; path = SVWebViewController/SVWebViewController.m; sourceTree = "<group>"; };
+		DE035C4B7064855FB6B8E866 /* Pods-PHNewsApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PHNewsApp-resources.sh"; sourceTree = "<group>"; };
+		DF1C2EC018464EC12E1DE18D /* MWFeedItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWFeedItem.h; path = Classes/MWFeedItem.h; sourceTree = "<group>"; };
+		EAAA43E03724DB55E97CF13A /* MWFeedParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWFeedParser.h; path = Classes/MWFeedParser.h; sourceTree = "<group>"; };
+		EF1CE32FEAA297063DDDB309 /* SVWebViewControllerNext.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = SVWebViewControllerNext.png; path = SVWebViewController/SVWebViewController.bundle/SVWebViewControllerNext.png; sourceTree = "<group>"; };
+		F1C411284DA580EB57E5F8C7 /* MWFeedParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MWFeedParser.m; path = Classes/MWFeedParser.m; sourceTree = "<group>"; };
+		F3080E60FD98230AD9BAA78D /* SVWebViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVWebViewController.h; path = SVWebViewController/SVWebViewController.h; sourceTree = "<group>"; };
+		F340B394A13DC7E096898E72 /* libPods-PHNewsApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PHNewsApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F68D9F2DA2359A1F2E8D455B /* SVWebViewControllerBack.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = SVWebViewControllerBack.png; path = SVWebViewController/SVWebViewController.bundle/SVWebViewControllerBack.png; sourceTree = "<group>"; };
+		FE874608C42F20012F2E15C0 /* Pods-PHNewsApp-SVWebViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PHNewsApp-SVWebViewController-dummy.m"; sourceTree = "<group>"; };
+		FF5A59BAE00BB4FB92B5BCD1 /* Pods-PHNewsApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PHNewsApp-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3BC6B19E30A7A88FB34E8B3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93F56006C912EE31226CF2A1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5985BE03F575B036BA76DF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1DFBA8ABDE62486C64B6F30 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF5CFF2DEA3B70C28A31F85A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A300115EBB265FB77ADB4C04 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		106DD58874FAEAB546861D62 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				61909B40CF48F007E785840B /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		1450D068F31CFB7B55BC8AB5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F340B394A13DC7E096898E72 /* libPods-PHNewsApp.a */,
+				249DECFFF322C7AC9F6F1436 /* libPods-PHNewsApp-MWFeedParser.a */,
+				AD0C75F75EC5A5027BE1A03B /* libPods-PHNewsApp-SVWebViewController.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		440C7E3B7A580923E69BFB59 /* Pods-PHNewsApp */ = {
+			isa = PBXGroup;
+			children = (
+				2B64F3C424AA2518A843CF79 /* Pods-PHNewsApp-acknowledgements.markdown */,
+				920B43F88CF53E93932A6C92 /* Pods-PHNewsApp-acknowledgements.plist */,
+				FF5A59BAE00BB4FB92B5BCD1 /* Pods-PHNewsApp-dummy.m */,
+				A8EF4D9152B884024BE04478 /* Pods-PHNewsApp-environment.h */,
+				DE035C4B7064855FB6B8E866 /* Pods-PHNewsApp-resources.sh */,
+				8D605A1DBCC7A6D283289F82 /* Pods-PHNewsApp.debug.xcconfig */,
+				4D9C69D6A8482DE84EB44EDD /* Pods-PHNewsApp.release.xcconfig */,
+			);
+			name = "Pods-PHNewsApp";
+			path = "Target Support Files/Pods-PHNewsApp";
+			sourceTree = "<group>";
+		};
+		4ED7759B6F030E956D63FFD3 /* SVWebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				26CF4F11C206127795113B97 /* SVModalWebViewController.h */,
+				39B914CA9A8D3C593132E506 /* SVModalWebViewController.m */,
+				F3080E60FD98230AD9BAA78D /* SVWebViewController.h */,
+				DC9AE59995786E6BEE09B054 /* SVWebViewController.m */,
+				84A4D613158A7A1DDC3CD878 /* SVWebViewControllerActivity.h */,
+				73278BCD9518C50A5CFE47EF /* SVWebViewControllerActivity.m */,
+				35F33447419EA30A50DA9469 /* SVWebViewControllerActivityChrome.h */,
+				23C0055F3EDE5FD3489E1C2F /* SVWebViewControllerActivityChrome.m */,
+				0F91E2D4B3852844A115E8B2 /* SVWebViewControllerActivitySafari.h */,
+				0EEDDFB2A7058A4DE6984192 /* SVWebViewControllerActivitySafari.m */,
+				55CFC075DBDF67B00897E389 /* Resources */,
+				92B2B420742BFDE4D1659C64 /* Support Files */,
+			);
+			path = SVWebViewController;
+			sourceTree = "<group>";
+		};
+		55CFC075DBDF67B00897E389 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				48AA331BE9179797B0E9ADA0 /* SVWebViewController.bundle */,
+				76274ED2E99C49A3C758DEBF /* SVWebViewControllerActivityChrome-iPad.png */,
+				31E4FB30A922A7A2632EB3AB /* SVWebViewControllerActivityChrome-iPad@2x.png */,
+				982034B4A39A8E89ED9B045D /* SVWebViewControllerActivityChrome@2x.png */,
+				D24391A89D6855181EC3DC67 /* SVWebViewControllerActivitySafari-iPad.png */,
+				0512FCA2067F409896AC8124 /* SVWebViewControllerActivitySafari-iPad@2x.png */,
+				8FAEE60EE0FD1B0CBCB2273B /* SVWebViewControllerActivitySafari@2x.png */,
+				F68D9F2DA2359A1F2E8D455B /* SVWebViewControllerBack.png */,
+				0BED7648680253BA65455DE3 /* SVWebViewControllerBack@2x.png */,
+				EF1CE32FEAA297063DDDB309 /* SVWebViewControllerNext.png */,
+				0CF1401CA851DED4938CE113 /* SVWebViewControllerNext@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		55DE84FD1732EFDBA9290D1E /* MWFeedParser */ = {
+			isa = PBXGroup;
+			children = (
+				863530FD30664A713A39F631 /* FeedParser */,
+				ABFE079A4F1858E65B7478FE /* NSDate+InternetDateTime */,
+				AB3ABCDEAFE795CEC71DC6AB /* NSString+HTML */,
+				587E1A0AC6488EAD1F76B677 /* Support Files */,
+			);
+			path = MWFeedParser;
+			sourceTree = "<group>";
+		};
+		587E1A0AC6488EAD1F76B677 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				851D27CC3B14B7A40EDD4547 /* Pods-PHNewsApp-MWFeedParser.xcconfig */,
+				56AE80AC6CC9DED4D7E20FF8 /* Pods-PHNewsApp-MWFeedParser-Private.xcconfig */,
+				62489C909A4514AD843A0E63 /* Pods-PHNewsApp-MWFeedParser-dummy.m */,
+				98C174E6DEC3101EDF3E4210 /* Pods-PHNewsApp-MWFeedParser-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-PHNewsApp-MWFeedParser";
+			sourceTree = "<group>";
+		};
+		64D42A7E301D946D6287683E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				440C7E3B7A580923E69BFB59 /* Pods-PHNewsApp */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		863530FD30664A713A39F631 /* FeedParser */ = {
+			isa = PBXGroup;
+			children = (
+				9C6782E8AADB6FF4DD44810A /* MWFeedInfo.h */,
+				1B2CCD50B1B63E85C80A62E0 /* MWFeedInfo.m */,
+				DF1C2EC018464EC12E1DE18D /* MWFeedItem.h */,
+				A30D0F6EA57B5D2079F03540 /* MWFeedItem.m */,
+				EAAA43E03724DB55E97CF13A /* MWFeedParser.h */,
+				F1C411284DA580EB57E5F8C7 /* MWFeedParser.m */,
+				B326D65BB6A7D0E72A81B5BE /* MWFeedParser_Private.h */,
+			);
+			name = FeedParser;
+			sourceTree = "<group>";
+		};
+		92B2B420742BFDE4D1659C64 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D1CB0892008E0AB4EA6BBAA7 /* Pods-PHNewsApp-SVWebViewController.xcconfig */,
+				B272757C2C2968659CAFE1C4 /* Pods-PHNewsApp-SVWebViewController-Private.xcconfig */,
+				FE874608C42F20012F2E15C0 /* Pods-PHNewsApp-SVWebViewController-dummy.m */,
+				9AEF7002948C77E591E26A94 /* Pods-PHNewsApp-SVWebViewController-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-PHNewsApp-SVWebViewController";
+			sourceTree = "<group>";
+		};
+		AB3ABCDEAFE795CEC71DC6AB /* NSString+HTML */ = {
+			isa = PBXGroup;
+			children = (
+				782F17AF4B769A7DBCAAA840 /* GTMNSString+HTML.h */,
+				8DA763173924DC7CCFDBD76D /* GTMNSString+HTML.m */,
+				BFFE8D38933E7F3EF92594A1 /* NSString+HTML.h */,
+				73CA7E52F3FBF98B614C6C0B /* NSString+HTML.m */,
+			);
+			name = "NSString+HTML";
+			sourceTree = "<group>";
+		};
+		ABFE079A4F1858E65B7478FE /* NSDate+InternetDateTime */ = {
+			isa = PBXGroup;
+			children = (
+				561A0BE3375E51574DD48060 /* NSDate+InternetDateTime.h */,
+				D8501E6DC470514D21F8AF79 /* NSDate+InternetDateTime.m */,
+			);
+			name = "NSDate+InternetDateTime";
+			sourceTree = "<group>";
+		};
+		E77925752342F0F24488453D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				106DD58874FAEAB546861D62 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EAD0B0989BA7256D5AA337C9 = {
+			isa = PBXGroup;
+			children = (
+				1276CE1491213652922559B3 /* Podfile */,
+				E77925752342F0F24488453D /* Frameworks */,
+				F871771AAC453CCA770F674E /* Pods */,
+				1450D068F31CFB7B55BC8AB5 /* Products */,
+				64D42A7E301D946D6287683E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		F871771AAC453CCA770F674E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55DE84FD1732EFDBA9290D1E /* MWFeedParser */,
+				4ED7759B6F030E956D63FFD3 /* SVWebViewController */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3EFF8CEA1A3FC84A3FD9F251 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D655E28C0DDD39E9D2B2410 /* SVModalWebViewController.h in Headers */,
+				6A09984A8CEC2D569BF5190E /* SVWebViewController.h in Headers */,
+				B4C21BFECA3F53852C9E0C18 /* SVWebViewControllerActivity.h in Headers */,
+				1E851C23BE32BE208B3F26F5 /* SVWebViewControllerActivityChrome.h in Headers */,
+				ACBC7126136E1D2697420527 /* SVWebViewControllerActivitySafari.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A77229A90D2EACEB8C62FE53 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EE738F0776103D222EBF627 /* GTMNSString+HTML.h in Headers */,
+				35F85EC4E67792EBBD78FF0C /* MWFeedInfo.h in Headers */,
+				AF06B47C4E44682BE82F8FE0 /* MWFeedItem.h in Headers */,
+				47C52567215B0BBCF6E440DC /* MWFeedParser.h in Headers */,
+				E5D1809548511253A1CE2A88 /* MWFeedParser_Private.h in Headers */,
+				49676933940037CBEBBC7B14 /* NSDate+InternetDateTime.h in Headers */,
+				6FF22FC028B45990F807B5D0 /* NSString+HTML.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		182D3DD077467DB8A0708111 /* Pods-PHNewsApp-SVWebViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B897974759EBD8092012D7A6 /* Build configuration list for PBXNativeTarget "Pods-PHNewsApp-SVWebViewController" */;
+			buildPhases = (
+				5A3C08859A393793ADCA75E0 /* Sources */,
+				FF5CFF2DEA3B70C28A31F85A /* Frameworks */,
+				3EFF8CEA1A3FC84A3FD9F251 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-PHNewsApp-SVWebViewController";
+			productName = "Pods-PHNewsApp-SVWebViewController";
+			productReference = AD0C75F75EC5A5027BE1A03B /* libPods-PHNewsApp-SVWebViewController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B14626C83D9F2CD791241964 /* Pods-PHNewsApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0578DAB4DB412D1B8C031ADA /* Build configuration list for PBXNativeTarget "Pods-PHNewsApp" */;
+			buildPhases = (
+				735B2A9949DAB0133FED54A2 /* Sources */,
+				3BC6B19E30A7A88FB34E8B3C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC212F5BEE4003072EB252F8 /* PBXTargetDependency */,
+				E9851E347DD368C2087786EB /* PBXTargetDependency */,
+			);
+			name = "Pods-PHNewsApp";
+			productName = "Pods-PHNewsApp";
+			productReference = F340B394A13DC7E096898E72 /* libPods-PHNewsApp.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F526470127AAFF16E0CF0DAC /* Pods-PHNewsApp-MWFeedParser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B4CBC96864766AA52F92367 /* Build configuration list for PBXNativeTarget "Pods-PHNewsApp-MWFeedParser" */;
+			buildPhases = (
+				611D6B64705709223C7B2C5A /* Sources */,
+				E5985BE03F575B036BA76DF8 /* Frameworks */,
+				A77229A90D2EACEB8C62FE53 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-PHNewsApp-MWFeedParser";
+			productName = "Pods-PHNewsApp-MWFeedParser";
+			productReference = 249DECFFF322C7AC9F6F1436 /* libPods-PHNewsApp-MWFeedParser.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20039FAA9BF5F36F7DCDEACC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = BC0E9E597607CAF1E69B44DD /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EAD0B0989BA7256D5AA337C9;
+			productRefGroup = 1450D068F31CFB7B55BC8AB5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B14626C83D9F2CD791241964 /* Pods-PHNewsApp */,
+				F526470127AAFF16E0CF0DAC /* Pods-PHNewsApp-MWFeedParser */,
+				182D3DD077467DB8A0708111 /* Pods-PHNewsApp-SVWebViewController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A3C08859A393793ADCA75E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF90B4CB9FBA04102321DACD /* Pods-PHNewsApp-SVWebViewController-dummy.m in Sources */,
+				14E35EE979C624659D9B32E5 /* SVModalWebViewController.m in Sources */,
+				AE0C0822E2C9D18167EAE7B9 /* SVWebViewController.m in Sources */,
+				57CD7963F8D9E866C7DE15C2 /* SVWebViewControllerActivity.m in Sources */,
+				D60E4FECDFEAD0EB8EEBFAB6 /* SVWebViewControllerActivityChrome.m in Sources */,
+				90AB769C13F7E47D64FD73EB /* SVWebViewControllerActivitySafari.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		611D6B64705709223C7B2C5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F61BEE766AE1FC79A5890C2 /* GTMNSString+HTML.m in Sources */,
+				B1FA612078663073DA4BDEDA /* MWFeedInfo.m in Sources */,
+				3955401ABB5E1BBD355B56C9 /* MWFeedItem.m in Sources */,
+				034F9FB3619DFEA408C21DF2 /* MWFeedParser.m in Sources */,
+				FBB1823E8E657AB8D5072207 /* NSDate+InternetDateTime.m in Sources */,
+				F35821DE29451735521319E7 /* NSString+HTML.m in Sources */,
+				9E751CEBABB6BD29C2FA17F2 /* Pods-PHNewsApp-MWFeedParser-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		735B2A9949DAB0133FED54A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100F39660FDE06202181D206 /* Pods-PHNewsApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E9851E347DD368C2087786EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-PHNewsApp-SVWebViewController";
+			target = 182D3DD077467DB8A0708111 /* Pods-PHNewsApp-SVWebViewController */;
+			targetProxy = 3A9AB3ECE103197181124CFF /* PBXContainerItemProxy */;
+		};
+		FC212F5BEE4003072EB252F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-PHNewsApp-MWFeedParser";
+			target = F526470127AAFF16E0CF0DAC /* Pods-PHNewsApp-MWFeedParser */;
+			targetProxy = D157C65D2634843E012D7D60 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2A128D550CB570DF6B661289 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B272757C2C2968659CAFE1C4 /* Pods-PHNewsApp-SVWebViewController-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-PHNewsApp-SVWebViewController/Pods-PHNewsApp-SVWebViewController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		3932FF8744DC23D940A07651 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56AE80AC6CC9DED4D7E20FF8 /* Pods-PHNewsApp-MWFeedParser-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-PHNewsApp-MWFeedParser/Pods-PHNewsApp-MWFeedParser-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		451F225CF92744EE0448E923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B272757C2C2968659CAFE1C4 /* Pods-PHNewsApp-SVWebViewController-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-PHNewsApp-SVWebViewController/Pods-PHNewsApp-SVWebViewController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A7E3B17502193B0B9045A85A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D9C69D6A8482DE84EB44EDD /* Pods-PHNewsApp.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		BB4CD6E91AC53A05731F169A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56AE80AC6CC9DED4D7E20FF8 /* Pods-PHNewsApp-MWFeedParser-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-PHNewsApp-MWFeedParser/Pods-PHNewsApp-MWFeedParser-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D06A741A37E08F6569E1A053 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		E2270DBC58B7D0B5690AB9BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD9756C31625C3BAD1ECAD0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D605A1DBCC7A6D283289F82 /* Pods-PHNewsApp.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0578DAB4DB412D1B8C031ADA /* Build configuration list for PBXNativeTarget "Pods-PHNewsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD9756C31625C3BAD1ECAD0B /* Debug */,
+				A7E3B17502193B0B9045A85A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B4CBC96864766AA52F92367 /* Build configuration list for PBXNativeTarget "Pods-PHNewsApp-MWFeedParser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3932FF8744DC23D940A07651 /* Debug */,
+				BB4CD6E91AC53A05731F169A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B897974759EBD8092012D7A6 /* Build configuration list for PBXNativeTarget "Pods-PHNewsApp-SVWebViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				451F225CF92744EE0448E923 /* Debug */,
+				2A128D550CB570DF6B661289 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC0E9E597607CAF1E69B44DD /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D06A741A37E08F6569E1A053 /* Debug */,
+				E2270DBC58B7D0B5690AB9BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 20039FAA9BF5F36F7DCDEACC /* Project object */;
+}

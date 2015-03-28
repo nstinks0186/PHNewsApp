@@ -15,6 +15,9 @@
 		D9274BDD1AC6474200A8979C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9274BDC1AC6474200A8979C /* Images.xcassets */; };
 		D9274BE01AC6474200A8979C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9274BDE1AC6474200A8979C /* LaunchScreen.xib */; };
 		D9274BEC1AC6474200A8979C /* PHNewsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9274BEB1AC6474200A8979C /* PHNewsAppTests.swift */; };
+		D9274BF81AC647EA00A8979C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = D9274BF71AC647EA00A8979C /* Podfile */; };
+		D9274C021AC64F5700A8979C /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9274C011AC64F5700A8979C /* FeedItem.swift */; };
+		FCA51B8ABC1005CDD662097F /* libPods-PHNewsApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 527CA24363C3CB78D9E05907 /* libPods-PHNewsApp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +31,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		527CA24363C3CB78D9E05907 /* libPods-PHNewsApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PHNewsApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63A2CF08C3EE9B19A8B5DDD6 /* Pods-PHNewsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PHNewsApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PHNewsApp/Pods-PHNewsApp.debug.xcconfig"; sourceTree = "<group>"; };
+		D5BC29BA98127E07CCF2FB75 /* Pods-PHNewsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PHNewsApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-PHNewsApp/Pods-PHNewsApp.release.xcconfig"; sourceTree = "<group>"; };
 		D9274BCB1AC6474200A8979C /* PHNewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PHNewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9274BCF1AC6474200A8979C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9274BD01AC6474200A8979C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +46,9 @@
 		D9274BE51AC6474200A8979C /* PHNewsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PHNewsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9274BEA1AC6474200A8979C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9274BEB1AC6474200A8979C /* PHNewsAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHNewsAppTests.swift; sourceTree = "<group>"; };
+		D9274BF71AC647EA00A8979C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D9274BF91AC64B5800A8979C /* PHNewsApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PHNewsApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		D9274C011AC64F5700A8979C /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCA51B8ABC1005CDD662097F /* libPods-PHNewsApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +70,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D3A5F9FF5CB694F74EC57156 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				527CA24363C3CB78D9E05907 /* libPods-PHNewsApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D9274BC21AC6474200A8979C = {
 			isa = PBXGroup;
 			children = (
 				D9274BCD1AC6474200A8979C /* PHNewsApp */,
 				D9274BE81AC6474200A8979C /* PHNewsAppTests */,
 				D9274BCC1AC6474200A8979C /* Products */,
+				E4913AD414621DC626FCA2DC /* Pods */,
+				D3A5F9FF5CB694F74EC57156 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +101,7 @@
 		D9274BCD1AC6474200A8979C /* PHNewsApp */ = {
 			isa = PBXGroup;
 			children = (
+				D9274C011AC64F5700A8979C /* FeedItem.swift */,
 				D9274BD01AC6474200A8979C /* AppDelegate.swift */,
 				D9274BD51AC6474200A8979C /* MasterViewController.swift */,
 				D9274BD71AC6474200A8979C /* DetailViewController.swift */,
@@ -96,7 +117,9 @@
 		D9274BCE1AC6474200A8979C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D9274BF71AC647EA00A8979C /* Podfile */,
 				D9274BCF1AC6474200A8979C /* Info.plist */,
+				D9274BF91AC64B5800A8979C /* PHNewsApp-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -118,6 +141,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E4913AD414621DC626FCA2DC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				63A2CF08C3EE9B19A8B5DDD6 /* Pods-PHNewsApp.debug.xcconfig */,
+				D5BC29BA98127E07CCF2FB75 /* Pods-PHNewsApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -125,9 +157,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D9274BEF1AC6474200A8979C /* Build configuration list for PBXNativeTarget "PHNewsApp" */;
 			buildPhases = (
+				EB90BEB94E0D5DCE59622781 /* Check Pods Manifest.lock */,
 				D9274BC71AC6474200A8979C /* Sources */,
 				D9274BC81AC6474200A8979C /* Frameworks */,
 				D9274BC91AC6474200A8979C /* Resources */,
+				E07ECF64E6542DCAC4C57418 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -200,6 +234,7 @@
 			files = (
 				D9274BDB1AC6474200A8979C /* Main.storyboard in Resources */,
 				D9274BE01AC6474200A8979C /* LaunchScreen.xib in Resources */,
+				D9274BF81AC647EA00A8979C /* Podfile in Resources */,
 				D9274BDD1AC6474200A8979C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,6 +248,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E07ECF64E6542DCAC4C57418 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PHNewsApp/Pods-PHNewsApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB90BEB94E0D5DCE59622781 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D9274BC71AC6474200A8979C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -221,6 +289,7 @@
 				D9274BD41AC6474200A8979C /* PHNewsApp.xcdatamodeld in Sources */,
 				D9274BD11AC6474200A8979C /* AppDelegate.swift in Sources */,
 				D9274BD61AC6474200A8979C /* MasterViewController.swift in Sources */,
+				D9274C021AC64F5700A8979C /* FeedItem.swift in Sources */,
 				D9274BD81AC6474200A8979C /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,21 +413,25 @@
 		};
 		D9274BF01AC6474200A8979C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63A2CF08C3EE9B19A8B5DDD6 /* Pods-PHNewsApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PHNewsApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PHNewsApp/PHNewsApp-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		D9274BF11AC6474200A8979C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5BC29BA98127E07CCF2FB75 /* Pods-PHNewsApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PHNewsApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PHNewsApp/PHNewsApp-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -415,6 +488,7 @@
 				D9274BF11AC6474200A8979C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D9274BF21AC6474200A8979C /* Build configuration list for PBXNativeTarget "PHNewsAppTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +497,7 @@
 				D9274BF41AC6474200A8979C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

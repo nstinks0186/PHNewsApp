@@ -9,10 +9,11 @@
 import UIKit
 import CoreData
 
-class MasterViewController: UITableViewController, NSFetchedResultsControllerDelegate {
+class MasterViewController: UITableViewController, NSFetchedResultsControllerDelegate, MWFeedParserDelegate {
 
     var detailViewController: DetailViewController? = nil
-    var managedObjectContext: NSManagedObjectContext? = nil
+    let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+    let managedObjectContext = (UIApplication.sharedApplication().delegate as AppDelegate).managedObjectContext
 
 
     override func awakeFromNib() {
@@ -25,39 +26,48 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        self.navigationItem.leftBarButtonItem = self.editButtonItem()
-
-        let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "insertNewObject:")
-        self.navigationItem.rightBarButtonItem = addButton
+        
+        // navigation item
+//        self.navigationItem.leftBarButtonItem = self.editButtonItem()
+//        let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "insertNewObject:")
+//        self.navigationItem.rightBarButtonItem = addButton
+        
+        // split view controller
         if let split = self.splitViewController {
             let controllers = split.viewControllers
             self.detailViewController = controllers[controllers.count-1].topViewController as? DetailViewController
         }
+        
+        // init feed
+        var URL = NSURL(string: "http://newsinfo.inquirer.net/feed")
+        var feedParser = MWFeedParser(feedURL: URL);
+        feedParser.delegate = self
+        feedParser.parse()
+        
+        URL = NSURL(string: "http://feeds.feedburner.com/rappler/news")
+        feedParser = MWFeedParser(feedURL: URL);
+        feedParser.delegate = self
+        feedParser.parse()
+        
+        URL = NSURL(string: "http://www.gmanetwork.com/news/rss/news")
+        feedParser = MWFeedParser(feedURL: URL);
+        feedParser.delegate = self
+        feedParser.parse()
+        
+        URL = NSURL(string: "http://www.philstar.com/rss/headlines")
+        feedParser = MWFeedParser(feedURL: URL);
+        feedParser.delegate = self
+        feedParser.parse()
+        
+        URL = NSURL(string: "http://www.abs-cbnnews.com/nation/feed")
+        feedParser = MWFeedParser(feedURL: URL);
+        feedParser.delegate = self
+        feedParser.parse()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-
-    func insertNewObject(sender: AnyObject) {
-        let context = self.fetchedResultsController.managedObjectContext
-        let entity = self.fetchedResultsController.fetchRequest.entity!
-        let newManagedObject = NSEntityDescription.insertNewObjectForEntityForName(entity.name!, inManagedObjectContext: context) as NSManagedObject
-             
-        // If appropriate, configure the new managed object.
-        // Normally you should use accessor methods, but using KVC here avoids the need to add a custom class to the template.
-        newManagedObject.setValue(NSDate(), forKey: "timeStamp")
-             
-        // Save the context.
-        var error: NSError? = nil
-        if !context.save(&error) {
-            // Replace this implementation with code to handle the error appropriately.
-            // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-            //println("Unresolved error \(error), \(error.userInfo)")
-            abort()
-        }
     }
 
     // MARK: - Segues
@@ -110,10 +120,69 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
             }
         }
     }
+    
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 60
+    }
 
     func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) {
-        let object = self.fetchedResultsController.objectAtIndexPath(indexPath) as NSManagedObject
-        cell.textLabel!.text = object.valueForKey("timeStamp")!.description
+        let feedItem = self.fetchedResultsController.objectAtIndexPath(indexPath) as FeedItem
+        cell.textLabel!.text = feedItem.title
+        cell.detailTextLabel!.text = feedItem.source
+    }
+    
+    // MARK: - MWFeedParser
+    
+    func feedParserDidStart(parser: MWFeedParser!) {
+        
+    }
+    
+    func feedParserDidFinish(parser: MWFeedParser!) {
+        appDelegate.saveContext()
+    }
+    
+    func feedParser(parser: MWFeedParser!, didParseFeedInfo info: MWFeedInfo!) {
+        
+    }
+    
+    func feedParser(parser: MWFeedParser!, didParseFeedItem item: MWFeedItem!) {
+        let fetchRequest = NSFetchRequest()
+        fetchRequest.entity = NSEntityDescription.entityForName(FeedItemEntity.entityName, inManagedObjectContext: self.managedObjectContext!)
+        fetchRequest.predicate = NSPredicate(format: "identifier == %@", item.identifier)
+        if let fetchResults = managedObjectContext!.executeFetchRequest(fetchRequest, error: nil) as? [FeedItem] {
+            if(fetchResults.count > 0) { return }
+        }
+        
+        println("\(item.title)")
+        println("\(item.content)")
+        
+        let feedItem = NSEntityDescription.insertNewObjectForEntityForName(FeedItemEntity.entityName, inManagedObjectContext: self.managedObjectContext!) as FeedItem
+        feedItem.source = (parser.url().absoluteString! == "http://newsinfo.inquirer.net/feed" ? "Inquirer.net" : (parser.url().absoluteString! == "http://feeds.feedburner.com/rappler/news" ? "Rappler" :
+            (parser.url().absoluteString! == "http://www.gmanetwork.com/news/rss/news" ? "GMA News" :
+            (parser.url().absoluteString! == "http://www.philstar.com/rss/headlines" ? "PhilStar" :
+            (parser.url().absoluteString! == "http://www.abs-cbnnews.com/nation/feed" ? "ABS-CBN News" :
+                parser.url().absoluteString!)))))
+        feedItem.identifier = item.identifier
+        feedItem.title = item.title.stringByConvertingHTMLToPlainText()
+        feedItem.link = item.link
+        if let author = item.author {
+            feedItem.author = author
+        }
+        feedItem.date = item.date
+        feedItem.summary = item.summary
+        if let content = item.content {
+            feedItem.content = content
+        }
+        if let updated = item.updated {
+            feedItem.updatedDate = item.updated
+        }
+        if let enclosures = item.enclosures {
+        }
+        //        feedItem.enclosures = item.enclosures
+    }
+    
+    func feedParser(parser: MWFeedParser!, didFailWithError error: NSError!) {
+        
     }
 
     // MARK: - Fetched results controller
@@ -125,14 +194,14 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
         
         let fetchRequest = NSFetchRequest()
         // Edit the entity name as appropriate.
-        let entity = NSEntityDescription.entityForName("Event", inManagedObjectContext: self.managedObjectContext!)
+        let entity = NSEntityDescription.entityForName(FeedItemEntity.entityName, inManagedObjectContext: self.managedObjectContext!)
         fetchRequest.entity = entity
         
         // Set the batch size to a suitable number.
         fetchRequest.fetchBatchSize = 20
         
         // Edit the sort key as appropriate.
-        let sortDescriptor = NSSortDescriptor(key: "timeStamp", ascending: false)
+        let sortDescriptor = NSSortDescriptor(key: "date", ascending: false)
         let sortDescriptors = [sortDescriptor]
         
         fetchRequest.sortDescriptors = [sortDescriptor]
@@ -150,6 +219,8 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
              //println("Unresolved error \(error), \(error.userInfo)")
     	     abort()
     	}
+        
+        
         
         return _fetchedResultsController!
     }    

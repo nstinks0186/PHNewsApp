@@ -10,7 +10,8 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
-    @IBOutlet weak var detailDescriptionLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var summaryLabel: UILabel!
 
 
     var detailItem: AnyObject? {
@@ -22,10 +23,23 @@ class DetailViewController: UIViewController {
 
     func configureView() {
         // Update the user interface for the detail item.
-        if let detail: AnyObject = self.detailItem {
-            if let label = self.detailDescriptionLabel {
-                label.text = detail.valueForKey("timeStamp")!.description
+        if let feedItem: FeedItem = self.detailItem as? FeedItem {
+            if let label = self.titleLabel {
+                label.text = feedItem.title
             }
+            if let label = self.summaryLabel {
+                label.text = feedItem.summary.stringByConvertingHTMLToPlainText()
+            }
+        }
+    }
+    
+    func titleLabelTapped(label:UILabel) {
+        if let feedItem: FeedItem = self.detailItem as? FeedItem {
+            var webVC = SVWebViewController(address: feedItem.link)
+            self.showViewController(webVC, sender: self)
+            webVC.title = feedItem.source
+//            SVWebViewController *webViewController = [[SVWebViewController alloc] initWithAddress:@"http://google.com"];
+//            [self.navigationController pushViewController:webViewController animated:YES];
         }
     }
 
@@ -33,6 +47,9 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.configureView()
+        
+        var titleLabelTapGestureRecognizer = UITapGestureRecognizer(target: self, action: "titleLabelTapped:");
+        titleLabel.addGestureRecognizer(titleLabelTapGestureRecognizer)
     }
 
     override func didReceiveMemoryWarning() {
